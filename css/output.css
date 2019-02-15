@@ -35,7 +35,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  margin-bottom: -1.2px;
+  margin-bottom: -1.6px;
 }
 
 .bodyNavColumn {
@@ -88,7 +88,13 @@ body {
 }
 .topBody .container a {
   padding-top: 2%;
+  text-decoration: none;
+  font-family: serif;
   color: #ae9e85;
+}
+.topBody #et {
+  text-decoration: underline;
+  font-family: sans-serif;
 }
 .topBody .bottomBtn {
   display: flex;
@@ -114,6 +120,7 @@ body {
 }
 .mainBody .card {
   width: 49%;
+  max-height: 45%;
   margin-top: 1%;
   border: 1px solid black;
 }
@@ -168,17 +175,25 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  margin-top: 2%;
 }
-.footerBackground .footercolumn {
+.footerBackground .footerRow {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 60%;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .footerBackground .footerSearch {
   display: flex;
   flex-direction: column;
+}
+.footerBackground .footerMidBanner {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=output.css.map */

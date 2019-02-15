@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    margin-bottom: -1.2px;
+    margin-bottom: -1.6px;
   }
 }//end of top nav
 
@@ -78,10 +78,16 @@ body {
     border-top: 1px solid black;
     margin: 0 auto;
     text-align: center;
-    a{
+    a {
       padding-top: 2%;
+      text-decoration: none;
+      font-family: serif;
       color: $goldColor
     }
+  }
+  #et {
+    text-decoration: underline;
+    font-family: sans-serif;
   }
   .bottomBtn {
     @include flex-row;
@@ -94,7 +100,6 @@ body {
     a {
       color: white;
       text-decoration: none;
-
     }
   }
 }//top body end
@@ -104,6 +109,7 @@ body {
   @include midwidth;
   .card {
     width: 49%;
+    max-height: 45%;
     margin-top: 1%;
     border: 1px solid black;
   }
@@ -156,12 +162,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  .footercolumn{
+  margin-top: 2%;
+  .footerRow{
     @include flex-row;
-    justify-content: flex-end;
     @include midwidth;
+    justify-content: space-between;
   }
   .footerSearch {
     @include flex-col;
   }
+  .footerMidBanner {
+    @include midwidth;
+    @include flex-row;
+    justify-content: space-between;
+  }
+  // .footerLeft {
+  //   justify-content: flex-start;
+  // }
+  // .footerRight {
+  //   justify-content: flex-end;
+  // }
 }
