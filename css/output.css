@@ -1,0 +1,25 @@
+.topNavColumn {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.topNavColumn .topNav {
+  height: 30px;
+  background-color: black;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.topNavColumn .horizontalLine {
+  width: 80%;
+  margin: 0 auto;
+}
+.topNavColumn .logo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=output.css.map */

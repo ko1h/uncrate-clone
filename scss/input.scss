@@ -1,0 +1,34 @@
+$blackColor: black;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+@mixin midwidth {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topNavColumn {
+  width: 100%;
+  background-color: $blackColor;
+  @include flex-col;
+  .topNav {
+    height: 30px;
+    background-color: $blackColor;
+    @include midwidth;
+    @include flex-row;
+    justify-content: space-between;
+  }
+  .horizontalLine {
+    @include midwidth;
+  }
+  .logo {
+    @include midwidth;
+  }
+}//end of top nav
