@@ -21,6 +21,7 @@ body {
 }
 .topNavColumn .topNav a {
   color: white;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -34,6 +35,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  margin-bottom: -1.2px;
 }
 
 .bodyNavColumn {
@@ -45,6 +47,7 @@ body {
 .bodyNavColumn .bodyTopNav {
   display: flex;
   flex-direction: row;
+  font-size: 20px;
   justify-content: center;
   margin-top: 1%;
 }
@@ -56,6 +59,7 @@ body {
 }
 .bodyNavColumn .bodyBotNav a {
   color: #ae9e85;
+  font-size: 12px;
 }
 .bodyNavColumn a {
   color: black;
@@ -70,49 +74,33 @@ body {
   justify-content: center;
   border: 1px solid black;
 }
+.topBody .card {
+  width: 100%;
+}
 .topBody .container {
+  display: flex;
+  flex-direction: column;
   max-width: 80%;
-  width: 80%;
+  width: 60%;
   border-top: 1px solid black;
   margin: 0 auto;
   text-align: center;
 }
 .topBody .container a {
+  padding-top: 2%;
   color: #ae9e85;
 }
-.topBody .container p {
-  font-family: serif;
-  font-weight: normal;
-}
-.topBody .buttonColumns {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
-}
-.topBody .buttonColumns .topBtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  height: 36px;
-  margin-bottom: 3%;
-}
-.topBody .buttonColumns .topBtn a {
-  color: white;
-  text-decoration: none;
-}
-.topBody .buttonColumns .bottomBtn {
+.topBody .bottomBtn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #999999;
   height: 36px;
+  margin-top: 5%;
   margin-bottom: 3%;
 }
-.topBody .buttonColumns .bottomBtn a {
+.topBody .bottomBtn a {
   color: white;
   text-decoration: none;
 }
@@ -172,6 +160,25 @@ body {
 .mainBody .buttonColumns .bottomBtn a {
   color: white;
   text-decoration: none;
+}
+
+.footerBackground {
+  width: 100%;
+  background-image: url("../img/wall.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.footerBackground .footercolumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 60%;
+  margin: 0 auto;
+}
+.footerBackground .footerSearch {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=output.css.map */

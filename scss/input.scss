@@ -21,6 +21,7 @@ body {
     align-items: center;
     a {
       color: white;
+      font-size: 12px;
       font-weight: bold;
       text-decoration: none;
     }
@@ -33,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    margin-bottom: -1.2px;
   }
 }//end of top nav
 
@@ -41,6 +43,7 @@ body {
   @include flex-col;
   .bodyTopNav {
     @include flex-row;
+    font-size: 20px;
     justify-content:center;
     margin-top: 1%;
     }
@@ -50,6 +53,7 @@ body {
     align-items: center;
     a {
       color: $goldColor;
+      font-size: 12px
     }
   }
   a{
@@ -64,47 +68,33 @@ body {
   display: flex;
   justify-content: center;
   border: 1px solid black;
+  .card {
+    width: 100%;
+  }
   .container {
+    @include flex-col;
     max-width: 80%;
-    width: 80%;
+    width: 60%;
     border-top: 1px solid black;
     margin: 0 auto;
     text-align: center;
     a{
+      padding-top: 2%;
       color: $goldColor
     }
-    p {
-      font-family: serif;
-      font-weight: normal;
-    }
   }
-  .buttonColumns {
-    @include flex-col;
-    width: 70%;
-    margin: 0 auto;
-    .topBtn{
-      @include flex-row;
-      justify-content: center;
-      align-items: center;
-      background-color: $blackColor;
-      height: 36px;
-      margin-bottom: 3%;
-      a {
-        color: white;
-        text-decoration: none;
-      }
-    }
-    .bottomBtn {
-      @include flex-row;
-      justify-content: center;
-      align-items: center;
-      background-color: #999999;
-      height: 36px;
-      margin-bottom: 3%;
-      a {
-        color: white;
-        text-decoration: none;
-      }
+  .bottomBtn {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    background-color: #999999;
+    height: 36px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    a {
+      color: white;
+      text-decoration: none;
+
     }
   }
 }//top body end
@@ -157,5 +147,21 @@ body {
         text-decoration: none;
       }
     }
+  }
+}//end main body
+
+.footerBackground {
+  width: 100%;
+  background-image:url("../img/wall.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  .footercolumn{
+    @include flex-row;
+    justify-content: flex-end;
+    @include midwidth;
+  }
+  .footerSearch {
+    @include flex-col;
   }
 }
