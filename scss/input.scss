@@ -1,6 +1,12 @@
 $blackColor: black;
+$goldColor: #ae9e85;
 
 @import "mixin";
+
+body {
+  font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+}
 
 .topNavColumn {
   width: 100%;
@@ -12,13 +18,19 @@ $blackColor: black;
     @include midwidth;
     @include flex-row;
     justify-content: space-between;
+    align-items: center;
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
   }
   .horizontalLine {
     @include midwidth;
   }
   .logo {
     @include midwidth;
-    display: flex; 
+    display: flex;
     justify-content: center;
   }
 }//end of top nav
@@ -29,12 +41,63 @@ $blackColor: black;
   .bodyTopNav {
     @include flex-row;
     justify-content:center;
-  }
+    margin-top: 1%;
+    }
   .bodyBotNav {
     @include flex-row;
     justify-content:center;
+    align-items: center;
     a {
-      color: #ae9e85;
+      color: $goldColor;
+    }
+  }
+  a{
+    color: $blackColor;
+    text-decoration: none;
+    margin-right: 8px;
+  }
+}
+.topBody {
+  @include midwidth;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  .container {
+    width: 60%;
+    border-top: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      color: $goldColor
+    }
+  }
+  .buttonColumns {
+    @include flex-col;
+    width: 70%;
+    margin: 0 auto;
+    .topBtn{
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+      height: 36px;
+      margin-bottom: 3%;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .bottomBtn {
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      height: 36px;
+      margin-bottom: 3%;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

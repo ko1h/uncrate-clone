@@ -1,3 +1,8 @@
+body {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
 .topNavColumn {
   width: 100%;
   background-color: black;
@@ -7,25 +12,31 @@
 .topNavColumn .topNav {
   height: 30px;
   background-color: black;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.topNavColumn .topNav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 .topNavColumn .horizontalLine {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .topNavColumn .logo {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .bodyNavColumn {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -34,14 +45,70 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 1%;
 }
 .bodyNavColumn .bodyBotNav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .bodyNavColumn .bodyBotNav a {
   color: #ae9e85;
+}
+.bodyNavColumn a {
+  color: black;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.topBody {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+.topBody .container {
+  width: 60%;
+  border-top: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+}
+.topBody .container a {
+  color: #ae9e85;
+}
+.topBody .buttonColumns {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+.topBody .buttonColumns .topBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  height: 36px;
+  margin-bottom: 3%;
+}
+.topBody .buttonColumns .topBtn a {
+  color: white;
+  text-decoration: none;
+}
+.topBody .buttonColumns .bottomBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 36px;
+  margin-bottom: 3%;
+}
+.topBody .buttonColumns .bottomBtn a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=output.css.map */
