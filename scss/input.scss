@@ -1,18 +1,6 @@
 $blackColor: black;
 
-@mixin flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-@mixin flex-col {
-  display: flex;
-  flex-direction: column;
-}
-@mixin midwidth {
-  width: 80%;
-  margin: 0 auto;
-}
+@import "mixin";
 
 .topNavColumn {
   width: 100%;
@@ -30,5 +18,23 @@ $blackColor: black;
   }
   .logo {
     @include midwidth;
+    display: flex; 
+    justify-content: center;
   }
 }//end of top nav
+
+.bodyNavColumn {
+  @include midwidth;
+  @include flex-col;
+  .bodyTopNav {
+    @include flex-row;
+    justify-content:center;
+  }
+  .bodyBotNav {
+    @include flex-row;
+    justify-content:center;
+    a {
+      color: #ae9e85;
+    }
+  }
+}
