@@ -120,18 +120,17 @@ body {
 .mainBody {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 60%;
   margin: 0 auto;
-  justify-content: center;
-  border: 1px solid black;
 }
 .mainBody .card {
-  margin-top: 2%;
-  border-top: 1px solid black;
+  width: 49%;
+  margin-top: 1%;
+  border: 1px solid black;
 }
 .mainBody .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
 }

@@ -112,14 +112,13 @@ body {
 .mainBody {
   @include flexi;
   @include midwidth;
-  justify-content: center;
-  border: 1px solid black;
   .card {
-    margin-top: 2%;
-    border-top: 1px solid black;
+    width: 49%;
+    margin-top: 1%;
+    border: 1px solid black;
   }
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     a{
