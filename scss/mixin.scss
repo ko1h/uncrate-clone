@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 @mixin midwidth {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
+}
+
+@mixin flexi {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }

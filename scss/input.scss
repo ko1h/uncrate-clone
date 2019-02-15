@@ -32,6 +32,7 @@ body {
     @include midwidth;
     display: flex;
     justify-content: center;
+    margin-top: 2%;
   }
 }//end of top nav
 
@@ -56,19 +57,25 @@ body {
     text-decoration: none;
     margin-right: 8px;
   }
-}
+}//body NavColumn
+
 .topBody {
   @include midwidth;
   display: flex;
   justify-content: center;
   border: 1px solid black;
   .container {
-    width: 60%;
+    max-width: 80%;
+    width: 80%;
     border-top: 1px solid black;
     margin: 0 auto;
     text-align: center;
     a{
       color: $goldColor
+    }
+    p {
+      font-family: serif;
+      font-weight: normal;
     }
   }
   .buttonColumns {
@@ -79,7 +86,7 @@ body {
       @include flex-row;
       justify-content: center;
       align-items: center;
-      background-color: gray;
+      background-color: $blackColor;
       height: 36px;
       margin-bottom: 3%;
       a {
@@ -91,7 +98,59 @@ body {
       @include flex-row;
       justify-content: center;
       align-items: center;
-      background-color: black;
+      background-color: #999999;
+      height: 36px;
+      margin-bottom: 3%;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}//top body end
+
+.mainBody {
+  @include flexi;
+  @include midwidth;
+  justify-content: center;
+  border: 1px solid black;
+  .card {
+    margin-top: 2%;
+    border-top: 1px solid black;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      color: $goldColor
+    }
+    p {
+      font-family: serif;
+      font-weight: normal;
+    }
+  }
+  .buttonColumns {
+    @include flex-col;
+    width: 70%;
+    margin: 0 auto;
+    .topBtn{
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: $blackColor;
+      height: 36px;
+      margin-bottom: 3%;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .bottomBtn {
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: #999999;
       height: 36px;
       margin-bottom: 3%;
       a {

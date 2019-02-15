@@ -12,7 +12,7 @@ body {
 .topNavColumn .topNav {
   height: 30px;
   background-color: black;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -25,18 +25,19 @@ body {
   text-decoration: none;
 }
 .topNavColumn .horizontalLine {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 .topNavColumn .logo {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .bodyNavColumn {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -63,20 +64,25 @@ body {
 }
 
 .topBody {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   border: 1px solid black;
 }
 .topBody .container {
-  width: 60%;
+  max-width: 80%;
+  width: 80%;
   border-top: 1px solid black;
   margin: 0 auto;
   text-align: center;
 }
 .topBody .container a {
   color: #ae9e85;
+}
+.topBody .container p {
+  font-family: serif;
+  font-weight: normal;
 }
 .topBody .buttonColumns {
   display: flex;
@@ -89,7 +95,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: black;
   height: 36px;
   margin-bottom: 3%;
 }
@@ -102,11 +108,69 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #999999;
   height: 36px;
   margin-bottom: 3%;
 }
 .topBody .buttonColumns .bottomBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+.mainBody {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid black;
+}
+.mainBody .card {
+  margin-top: 2%;
+  border-top: 1px solid black;
+}
+.mainBody .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.mainBody .container a {
+  color: #ae9e85;
+}
+.mainBody .container p {
+  font-family: serif;
+  font-weight: normal;
+}
+.mainBody .buttonColumns {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+.mainBody .buttonColumns .topBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 36px;
+  margin-bottom: 3%;
+}
+.mainBody .buttonColumns .topBtn a {
+  color: white;
+  text-decoration: none;
+}
+.mainBody .buttonColumns .bottomBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #999999;
+  height: 36px;
+  margin-bottom: 3%;
+}
+.mainBody .buttonColumns .bottomBtn a {
   color: white;
   text-decoration: none;
 }
