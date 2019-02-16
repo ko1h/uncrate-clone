@@ -11,9 +11,11 @@
 * _Can clone version of the website Uncrate_
 * _Once website is under 700px top Nav will disappear and columns will become 100% in width_
 
-![Screen Shot]("img/screenshot1.png")
+* _Real Uncrate website preview_
+![Screen Shot](img/screenshot1.png)
 
-![Screen Shot]("img/screenshot2.png")
+* _Clone Uncrate website preview_
+![Screen Shot](img/screenshot2.png)
 
 ## Setup/Installation Requirements
 
