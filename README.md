@@ -6,7 +6,7 @@
 
 ## Description
 
-* _The purpose of this project to make a clone of a website._
+* _The purpose of this project is to make a clone of a website._
 
 * _I Made clone version of the website Uncrate_
 * _Once website is under 700px top Nav will disappear and columns will become 100% in width_
